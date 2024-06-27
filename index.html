@@ -1,122 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>It-incubator precourse</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Здесь должны быть три тега c сервиса Google fonts для подключения шрифтов  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
-  </head>
-  <body data-cy="hw2-body">
-    <!-- ЗАДАНИЕ -->
-    <!-- Необходимо создать html-элементы там, где это нужно, в соответствии с правилами семантической разметки -->
-    <!-- ⚠️ Атрибут data-cy удалять нельзя! Он учавствует в проверке. Если его удалить, тесты не пройдут. -->
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>It-incubator precourse</title>
+</head>
+<body data-cy="hw2-body">
     <header data-cy="hw2-header">
-      <span data-cy="hw2-header-span">IT-INCUBATOR</span>
+        <span data-cy="hw2-header-span">IT-INCUBATOR</span>
     </header>
 
-    <section  class="main-section" data-cy="hw2-section-main-pre">
-      <!-- 1) В этом разделе создай 3 дочерних элемента: -->
-
-      <!-- a) Заголовок первого уровня со своим ФИО -->
-      <h1 class="main-title" data-cy="hw2-main-title">Тервартанян Карина Саркисовна</h1>
-      <!-- b) Несколько строк о себе: где учишься или работаешь, хобби, увлечения. Используй тег для абзаца. Длина строки должна быть больше 50-ти симвов (пробелы и др знаки припинания тоже считаются символом) -->
-      <p class="main-text" data-cy="hw2-text">работаю в интернет магазине ozon, учусь в it-incubator</p>
-      <!-- c) Фото (или любую картинку из интернета). Не забудь добавить описание на случай, если изображение не загрузится -->
-      <img class="main-image" data-cy="hw2-main-image"
-        src="uEqd3_FxIHw.jpg"
-        alt="foto"
-      />
+    <section class="main-section" data-cy="hw2-section-main-pre">
+        <h1 class="main-title" data-cy="hw2-main-title">Тервартанян Карина Саркисовна</h1>
+        <p class="main-text" data-cy="hw2-text">работаю в интернет магазине ozon, учусь в it-incubator</p>
+        <img class="main-image" data-cy="hw2-main-image" src="https://abbtech.az/storage/uploads/files/1687508692_1615533694-frontendd.svg" alt="">
     </section>
 
-    <section class="about-section"  data-cy="hw2-section-about-pre">
-      <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
-      <select data-cy="hw2-select-pre">
-        <option  selected>Тюмень</option>
-        <option >Москва</option>
-        <option >Нью-Йорк</option>
-        <option>Ереван</option>
-      </select>
-      <div >
-        <!-- 3) В этом разделе создай 2 дочерних элемента: -->
+    <section class="about-section" data-cy="hw2-section-about-pre">
+        <select data-cy="hw2-select-pre" name="" data-cy="">
+            <option value="">Paris</option>
+            <option value="" selected>Minsk</option>
+            <option value="">Milan</option>
+        </select>
 
-        <!-- a) Заголовок 2-го уровня (любимые книги/фильмы/блюда/страны... и т.п.) -->
-        <h2 class="section-title" data-cy="hw2-section-title-pre">Любимые фильмы</h2>
-        <!-- b) Маркированный список. В списке должно быть не менее 3-х элементов -->
-        <ul class="frameworks-list" data-cy="hw2-frameworks-list-pre">
-          <li>1+1</li>
-          <li>102 далматинца</li>
-          <li>Мстители</li>
-        </ul>
-      </div>
-      <div >
-        <!-- 3) В этом разделе создай 2 дочерних элемента: -->
+        <div>
+            <h2 class="section-title" data-cy="hw2-section-title-pre">Любимые фреймворки</h2>
+            <ul class="frameworks-list" data-cy="hw2-frameworks-list-pre">
+                <li>React</li>
+                <li>Angular</li>
+                <li>Vue</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="section-title" data-cy="hw2-section-title-pre">Рейтинг любимых книг</h2>
+            <ol class="books-list" data-cy="hw2-books-list-pre">
+                <li>HTML5+CSS3. Основы современного web-дизайна</li>
+                <li>HTML5, CSS3 и JavaScript. Исчерпывающее руководство</li>
+                <li>HTML5+CSS3. Разработка сайтов для любых браузеров и устройств. 2-е издание</li>
+            </ol>
+        </div>
+        <div>
+            <h2 class="section-title" data-cy="hw2-section-title-pre">Мои скиллы</h2>
+            <label class="label" data-cy="hw2-label-pre" for="1">
+                <input type="checkbox" checked name="" id="1">
+                HTML5
+            </label>
+    
+            <label class="label" data-cy="hw2-label-pre" for="2">
+                <input type="checkbox" checked name="" id="2">
+                CSS3
+            </label>
+    
+            <label class="label" data-cy="hw2-label-pre" for="3">
+                <input type="checkbox" name="" id="3">
+                JavaScript
+            </label>
+    
+            <label class="label" data-cy="hw2-label-pre" for="4">
+                <input type="checkbox" name="" id="4">
+                Jquery
+            </label>
+    
+            <label class="label" data-cy="hw2-label-pre" for="5">
+                <input type="checkbox" name="" id="5">
+                React
+            </label>
+        </div>
+        
+        <input class="text-field" data-cy="hw2-text-field-pre" type="text" placeholder="Новый скилл">
+        <button class="btn" data-cy="hw2-btn-pre">Добавить</button>
+        
+        <hr class="line" data-cy="hw2-line-pre">
 
-        <!-- a) Заголовок 2-го уровня с другим названием (любимые книги/фильмы/блюда/страны... и т.п.) -->
-        <h2 class="section-title" data-cy="hw2-section-title-pre">Любимые страны</h2>
-        <!-- b) Нумерованный (упорядоченный) список. В списке должно быть не менее 3-х элементов -->
-        <ol class="books-list " data-cy="hw2-books-list-pre">
-          <li>Армения</li>
-          <li>Испания</li>
-          <li>Греция</li>
-        </ol>
-      </div>
-      <div >
-        <h2 class="section-title" data-cy="hw2-section-title-pre">Мои скиллы</h2>
-        <!-- 4) Здесь создай несколько чекбоксов с подписью (не меньше 3-х). 
-                - В подписи укажи названия любых тем по верстке (все, что знаешь или слышал). 
-                - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для подписи
-                - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
-        <label  data-cy="hw2-label-pre" for="html"
-          ><input type="checkbox" id="html" checked />HTML</label
-        >
-        <label  data-cy="hw2-label-pre" for="css"><input type="checkbox" id="css" />CSS</label>
-        <label  data-cy="hw2-label-pre" for="JS"><input type="checkbox" id="JS" />JavaScript</label>
-        <label  data-cy="hw2-label-pre" for="react"><input type="checkbox" id="react" />React</label>
-      </div>
-      <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
-      <input data-cy="hw2-text-field-pre" class="text-field " type="text" placeholder="Новый скилл" />
-      <!-- 6) Создай здесь кнопку “Добавить” -->
-      <button data-cy="hw2-btn-pre" class="btn">Добавить</button>
-      <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
-      <hr class="line" data-cy="hw2-line-pre">
-      <table data-cy="hw2-about-table-pre" border="1" >
-        <tr>
-          <th>п/п</th>
-          <th>Наименование</th>
-          <th>Колличество</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Монитор</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Клавиатура</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Мышь</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td colspan="2">Итого:</td>
-          <td>4</td>
-        </tr>
-      </table>
-      <!-- 8) В таблице сделай 5 строк и 3 столбца. 
-                        - В первой строке ячейки заголовков, в остальных обычные ячейки
-                        - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
-                        - В последнем ряду первая ячейка должна занимать все свободное место по горизонтали (ширине). Таблицу можно заполнять любыми данными -->
+        <table data-cy="hw2-about-table-pre" border="1">
+            <tr>
+                <th>п/п</th>
+                <th>Наименование</th>
+                <th>Количество</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Монитор</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Клавиатура</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Мышь</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td colspan="2">Итого:</td>
+                <td>4</td>
+            </tr>
+        </table>
     </section>
+
     <footer data-cy="hw-footer-pre">
-      <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
-      <a class="footer-link" data-cy="hw-footer-link-pre" href="https://it-incubator.io/">it-incubator</a>
+        <a class="footer-link" data-cy="hw-footer-link-pre" href="https://it-incubator.io/">it-incubator</a>
     </footer>
-  </body>
+</body>
 </html>
