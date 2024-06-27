@@ -1,7 +1,7 @@
 * {
   /* Свойства для сброса начальных стилей элементов */
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -108,12 +108,13 @@ select {
 
 .books-list {
   /* Стили для нумерованного списка во второй секции */
+  padding: 0 20px;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0%;
   text-align: left;
-  padding: 0 20px;
+ 
 }
 
 .label {
