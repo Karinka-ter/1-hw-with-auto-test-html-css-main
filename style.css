@@ -56,7 +56,7 @@ header span {
 
 .main-image {
   /* Стили для изображения в первой секции */
-  width: 715px;
+  max-width: 715px;
 }
 
 .about-section {
@@ -115,7 +115,7 @@ select {
   line-height: 19px;
   letter-spacing: 0%;
   text-align: left;
-  padding-left: 20px;
+  padding: 0px 20px;
 }
 
 .label {
@@ -177,6 +177,7 @@ table {
   line-height: 17px;
   letter-spacing: 0px;
   text-align: left;
+  border-collapse: collapse;
 }
 
 th,
@@ -190,18 +191,17 @@ td {
   right: 0;
   top: 1681px;
   bottom: -1681px;
-  padding: 12px 14px 11px 15px;
+  padding: 12px 15px;
 }
 
 footer {
   /* Стили для футера */
   background-color: rgba(163, 167, 255, 0.3);
-  padding: 26px 0 27px;
+  padding: 26px 0px;
 }
 
 .footer-link {
   /* Стили для футера */
-  color: rgb(41, 101, 241);
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
