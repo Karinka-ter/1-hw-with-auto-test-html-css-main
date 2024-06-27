@@ -108,7 +108,7 @@ select {
 
 .books-list {
   /* Стили для нумерованного списка во второй секции */
-  padding: 0 20px;
+  padding: 0px 20px;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -207,4 +207,5 @@ footer {
   letter-spacing: 0;
   text-align: left;
   color: #2965f1;
+  text-decoration: none;
 }
