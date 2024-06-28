@@ -4,6 +4,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
 
 body {
   font-family: inter, sans-serif;
@@ -21,37 +24,26 @@ header span {
   color: #ffffff;
   font-size: 20px;
   font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0%;
-  text-align: left;
 }
 
 .main-section {
   /* Стили для первой секции */
-  background: rgb(250, 250, 255);
+  background: #fafaff;
   padding: 60px 0 60px;
-  height: 1024px;
+  min-height: 100vh;
 }
 
 .main-title {
   /* Стили для заголовка в первой секции */
-
   font-size: 48px;
   font-weight: 700;
-  line-height: 58px;
-  letter-spacing: 0%;
-  text-align: left;
   margin-bottom: 20px;
 }
 
 .main-text {
   /* Стили для текста в первой секции */
-
   font-size: 18px;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0%;
-  text-align: left;
 }
 
 .main-image {
@@ -69,41 +61,26 @@ select {
   /* Стили для выпадающего списка */
   width: 150px;
   height: 36px;
-  left: 0;
-  right: 1290px;
-  top: 1194px;
-  bottom: -347px;
-  padding: 9px 0px 8px 12px;
+  padding: 10px 0 10px 12px;
   appearance: none;
   background: url(ep_arrow-down.svg) no-repeat right 15px top 50%;
-  
   font-size: 16px;
   font-weight: 400;
-  line-height: 19px;
-  letter-spacing: 0%;
-  text-align: left;
 }
 
 .section-title {
   /* Стили для заголовков во второй секции */
-
   font-size: 24px;
   font-weight: 700;
-  line-height: 29px;
-  letter-spacing: 0%;
-  text-align: left;
   margin-bottom: 25px;
 }
 
 .frameworks-list {
   /* Стили для маркированного списка во второй секции */
   list-style-image: url(Vector.svg);
-  padding:0 20px;
+  padding: 0 20px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 19px;
-  letter-spacing: 0%;
-  text-align: left;
 }
 
 .books-list {
@@ -111,10 +88,6 @@ select {
   padding: 0 20px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 19px;
-  letter-spacing: 0%;
-  text-align: left;
- 
 }
 
 .label {
@@ -131,7 +104,6 @@ select {
   /* Стили для односточного поля ввода текста */
   width: 330px;
   padding: 9px 215px 8px 12px;
-  box-sizing: border-box;
   border: 1px solid rgba(48, 48, 48, 0.3);
   border-radius: 5px;
   background: rgba(255, 255, 255, 0);
@@ -139,25 +111,18 @@ select {
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
-  letter-spacing: 0%;
 }
 
 .btn {
   /* Стили для кнопки */
   border: 0;
   border-radius: 5px;
-  position: absolute;
   width: 125px;
   height: 36px;
-  left: 339px;
-  top: 1525px;
   background: rgb(41, 101, 241);
   color: rgb(255, 255, 255);
   font-size: 14px;
   font-weight: 700;
-  line-height: 17px;
-  letter-spacing: 0%;
-  text-align: left;
   padding: 10px 27px 9px 29px;
 }
 
@@ -174,7 +139,6 @@ table {
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
-  letter-spacing: 0px;
   text-align: left;
   border-collapse: collapse;
 }
@@ -201,11 +165,8 @@ footer {
 
 .footer-link {
   /* Стили для футера */
-  font-size: 14px;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0;
-  text-align: left;
+  font-size: 14px;
   color: #2965f1;
-  text-decoration: none;
 }
